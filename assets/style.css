@@ -1,5 +1,153 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(171, 193, 247);
+}
+
+/* Variables for colors*/
+:root {
+    --background1: rgb(82, 117, 123); 
+    --background2: rgba(111, 178, 230, 0.6);
+    --background3: #536881be;
+  }
+
+body { 
+    background-color: var(--background1);
+}
+
+/* Text color */
+.contenedor {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Flex parameters for search container*/
+.actual-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Date and Time*/
+.fecha-contenedor {
+   font-weight: 100; 
+}
+.fecha-contenedor .tiempo {
+    font-size: 15px;
+    font-weight: 100;
+}
+.fecha-contenedor .fecha {
+    font-size: 15px;
+}
+
+/* City-text on search box*/
+.lugar-contenedor .ciudad {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input format size*/
+.lugar-contenedor .pais{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Search box */
+.actual-info .otros {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background2);
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 420px;
+    margin: 1em;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+/* Search button position*/
+.buscar {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Search button parameters*/
+#buscar-boton {
+   font-size: 17px;
+   border-radius: 10px; 
+   border: 1px solid white;
+   height: 2.2em;
+   width: 3.5em; 
+   outline: none;
+   color: white;
+   background-color: var(--background3);
+}
+
+
+/* Input space*/
+.pais {
+    border: none;
+    outline: none;
+    padding: 1em 1.5em;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #c6edf5cf;
+    font-family: inherit;
+    font-size: 120%;
+}
+
+.actual-info .otros .clima-articulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Daily forecast container */
+.futuro-loco {
+    display: flex;
+    justify-content: center;
+    background: var(--background);
+    padding: 20px;
+    width: 450px;
+    left: 360px;
+    bottom: 310px;
+    color: white;
+    /*border: 1px solid white;*/
+    border-radius: 8px;
+}
+
+/* Future weather container */
+.futuro-loco {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+/* Display flex parameters for daily weather boxes*/
+.futuro-loco .clima-loco {
+    display: flex;
+}
+
+/* Display boxes of daily info*/
+.clima-loco .clima-loco-articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    background-color: var(--background2);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Daily info */
+.clima-loco .clima-loco-articulo .dia {
+    padding: 5px 15px;
+    background: var(--background3);
+    border: solid white 1px;
+    border-radius: 3px;
+    text-align: center;
 }
