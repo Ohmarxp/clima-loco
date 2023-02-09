@@ -9,5 +9,5 @@ let pais = document.getElementById('pais');
 let viento = document.getElementById('viento');
 let dia = document.querySelector('.dia')
 let ciudad = document.querySelector('.ciudad');
-let temperatura = document.querySelector('temperatura');
-let humedad = document.getElementById('humedad');
+let temperatura = document.querySelector('.temperatura');
+
